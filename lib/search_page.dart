@@ -134,7 +134,7 @@ class _SearchPageState extends State<SearchPage> {
 
     _dataList.forEach((userDetail) {
       if (userDetail.toLowerCase().startsWith(text.toLowerCase()) ||
-          userDetail.toLowerCase().startsWith(
+          userDetail.toLowerCase().contains(
               text.toLowerCase())) if (_searchList.contains(userDetail) ==
           false) {
         _searchList.add(userDetail);
